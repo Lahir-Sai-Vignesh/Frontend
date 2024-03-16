@@ -1,0 +1,55 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family: Montserrat;
+    font-size: 14px;
+    margin: 10px;
+}
+
+h1{
+    font-family: Fraunces;
+    margin: 10px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width : 300px;
+    /* padding : 10px;
+    border: 1px solid brown; */
+    border-radius: 5px;
+}
+
+.card-image{
+    border-radius : 5px;
+}
+.card-content{
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px ;
+    padding : 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.prices{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+
+}
