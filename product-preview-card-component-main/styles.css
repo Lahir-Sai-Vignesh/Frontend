@@ -45,9 +45,7 @@ h1{
     width : 350px;
 }
 
-.card-image{
-    border-radius : 10px 10px 0 0;
-}
+
 .card-content{
     background-color: hsl(0, 0%, 100%);
     border-bottom-left-radius: 10px;
@@ -55,7 +53,6 @@ h1{
     padding : 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .prod{
@@ -94,3 +91,60 @@ h1{
     background-color:  hsl(158, 31%, 16%);
     cursor: pointer;
 }
+
+@media screen and (min-width:650px){
+    
+    .card{
+       display: flex;
+       flex-direction: row;
+       width : 500px;
+       height: 450px;
+    }
+    .desktop-img{
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .mobile-img{
+        display: none;
+    }
+    .card-content{
+        background-color: hsl(0, 0%, 100%);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px ;
+        padding : 25px;
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:649px){
+    .desktop-img{
+        display:none;
+    }
+    .mobile-img{
+        border-radius : 10px 10px 0 0;
+    }
+}
+
+/* .desktop-card{
+    display: flex;
+    height: 450px;
+}
+
+.desktop-card-image{
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.desktop-card-content{
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    padding : 25px;
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+} */
